@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="BFDebugger" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin\Debug\BFDebugger" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Debug\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-march=athlon-xp" />
+					<Add option="-fexpensive-optimizations" />
+					<Add option="-O3" />
+					<Add directory="D:\_Project\BFDebugger\" />
+					<Add directory="D:\GTK\include\glib-2.0" />
+					<Add directory="D:\GTK\include\glibmm-2.4" />
+					<Add directory="D:\GTK\include\pangomm-1.4" />
+					<Add directory="D:\GTK\include\cairo" />
+					<Add directory="D:\GTK\include\cairomm-1.0" />
+					<Add directory="D:\GTK\include\gtkmm-2.4" />
+					<Add directory="D:\GTK\include\gdkmm-2.4" />
+					<Add directory="D:\GTK\include\atk-1.0" />
+					<Add directory="D:\GTK\include\atkmm-1.6" />
+					<Add directory="D:\GTK\include\sigc++-2.0" />
+					<Add directory="D:\GTK\include\pango-1.0" />
+					<Add directory="D:\GTK\include\gtk-2.0" />
+					<Add directory="D:\GTK\lib\glib-2.0\include" />
+					<Add directory="D:\GTK\lib\glibmm-2.4\include" />
+					<Add directory="D:\GTK\lib\gtkmm-2.4\include" />
+					<Add directory="D:\GTK\lib\gdkmm-2.4\include" />
+					<Add directory="D:\GTK\lib\sigc++-2.0\include" />
+					<Add directory="D:\GTK\lib\gtk-2.0\include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="D:\GTK\lib\libsigc-2.0.dll.a" />
+					<Add library="D:\GTK\lib\libglib-2.0.dll.a" />
+					<Add library="D:\GTK\lib\libglibmm-2.4.dll.a" />
+					<Add library="D:\GTK\lib\libgtk-win32-2.0.dll.a" />
+					<Add library="D:\GTK\lib\libgtkmm-2.4.dll.a" />
+					<Add library="D:\GTK\lib\libatkmm-1.6.dll.a" />
+					<Add library="D:\GTK\lib\gthread-2.0.lib" />
+					<Add library="D:\GTK\lib\gtk-win32-2.0.lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin\Release\BFDebugger" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Release\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="BFDebugger.cpp" />
+		<Unit filename="BFDebugger.h" />
+		<Unit filename="BFInDialog.cpp" />
+		<Unit filename="BFInDialog.h" />
+		<Unit filename="BFInput.cpp" />
+		<Unit filename="BFInput.h" />
+		<Unit filename="BFMemTable.cpp" />
+		<Unit filename="BFMemTable.h" />
+		<Unit filename="BFOutput.cpp" />
+		<Unit filename="BFOutput.h" />
+		<Unit filename="Brainfuck.cpp" />
+		<Unit filename="Brainfuck.h" />
+		<Unit filename="defines.h" />
+		<Unit filename="util\ArrayUtil.cpp" />
+		<Unit filename="util\ArrayUtil.h" />
+		<Unit filename="util\FileUtil.cpp" />
+		<Unit filename="util\FileUtil.h" />
+		<Unit filename="util\FileUtilGtk.cpp" />
+		<Unit filename="util\FileUtilGtk.h" />
+		<Unit filename="util\GizStr.cpp" />
+		<Unit filename="util\GizStr.h" />
+		<Unit filename="util\StringUtil.cpp" />
+		<Unit filename="util\StringUtil.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

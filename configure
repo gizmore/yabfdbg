@@ -1,0 +1,20 @@
+#! /bin/bash
+
+NOTFOUND=" not found, please install it, and try this configure again"
+
+echo "Checking for dependencies..."
+
+# ------ Check gtkmm
+
+echo "Check gtkmm is present"
+
+if [ -z "`whereis gtkmm|grep gtkmm.h`" ] &&
+	[ -z "`find /usr/include/ -name \"gtkmm.h\"`" ]
+then
+	echo "gtkmm" $NOTFOUND
+	exit 1
+fi
+# ------
+
+echo "Done."
+echo 'You can now run "make"'
